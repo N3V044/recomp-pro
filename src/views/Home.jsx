@@ -298,7 +298,7 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
         const maxScore = Math.max(...data.map(([, s]) => s));
 
         return (
-            <div style={{ marginTop: '6px', display: 'flex', height: '185px', gap: '4px' }}>
+            <div style={{ marginTop: '2px', display: 'flex', height: '180px', gap: '4px' }}>
                 {/* Y-Axis */}
                 <div style={{
                     display: 'flex',
@@ -472,7 +472,7 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
     return (
         <div className="view-container">
             {/* --- HERO SECTION --- */}
-            <div className="animate-slide-up" style={{ marginBottom: '8px' }}>
+            <div className="animate-slide-up" style={{ marginBottom: '4px' }}>
                 <PageHeader
                     title={
                         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -496,12 +496,12 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                 {/* LEFT: Muscle Load Analysis */}
                 <div className="hover-lift animate-slide-up delay-100" style={{
                     background: 'var(--bg-card)',
-                    padding: '14px 12px',
+                    padding: '8px 12px',
                     borderRadius: '12px',
                     border: '1px solid rgba(255,255,255,0.04)',
                     opacity: 0.96
                 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '3px' }}>
                         <div style={{ width: '3px', height: '10px', background: 'var(--accent-orange)', borderRadius: '2px' }}></div>
                         <div style={{ fontSize: '0.65rem', color: 'var(--text-tertiary)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>Muscle Load Analysis</div>
                     </div>
@@ -509,13 +509,13 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                 </div>
 
                 {/* RIGHT: Compact Session/Volume + Chart stacked */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                     {/* Ultra-compact Session + Volume card */}
                     <div className="hover-lift animate-slide-up delay-200" style={{
                         background: 'var(--bg-card)',
                         borderRadius: '12px',
                         border: '1px solid rgba(255,255,255,0.04)',
-                        padding: '8px 12px'
+                        padding: '5px 12px'
                     }}>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', marginBottom: '4px' }}>
                             <span style={{ fontSize: '1.05rem', fontWeight: '800', color: 'var(--text-primary)' }}>{strengthCount}</span>
@@ -544,7 +544,7 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                         borderRadius: '12px',
                         border: '1px solid rgba(255,255,255,0.04)',
                         overflow: 'hidden',
-                        minHeight: '210px',
+                        minHeight: '150px',
                         boxShadow: '0 0 20px rgba(59, 130, 246, 0.05)'
                     }}>
                         <div style={{
@@ -564,15 +564,15 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
             <div className="animate-slide-up delay-50" style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(3, 1fr)',
-                gap: '12px',
-                marginBottom: '12px'
+                gap: '8px',
+                marginBottom: '8px'
             }}>
                 {/* Weight Δ */}
                 <div className="hover-lift" style={{
                     background: 'var(--bg-card)',
                     borderRadius: '12px',
                     border: '1px solid rgba(255,255,255,0.06)',
-                    padding: '8px 10px',
+                    padding: '5px 8px',
                     textAlign: 'center',
                     borderRight: '1px solid rgba(255,255,255,0.08)'
                 }}>
@@ -596,7 +596,7 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                     background: 'var(--bg-card)',
                     borderRadius: '12px',
                     border: '1px solid rgba(255,255,255,0.06)',
-                    padding: '8px 10px',
+                    padding: '5px 8px',
                     textAlign: 'center',
                     borderRight: '1px solid rgba(255,255,255,0.08)'
                 }}>
@@ -620,7 +620,7 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                     background: 'var(--bg-card)',
                     borderRadius: '12px',
                     border: '1px solid rgba(255,255,255,0.06)',
-                    padding: '8px 10px',
+                    padding: '5px 8px',
                     textAlign: 'center'
                 }}>
                     <div style={{ fontSize: '0.55rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--text-tertiary)', fontWeight: '700', marginBottom: '4px', opacity: 0.8 }}>Lean Mass</div>
@@ -645,10 +645,10 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                 background: 'var(--bg-card)',
                 borderRadius: '12px',
                 border: '1px solid rgba(255,255,255,0.04)',
-                padding: '12px 14px',
-                marginBottom: '12px'
+                padding: '8px 12px',
+                marginBottom: '8px'
             }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
                     <div style={{ width: '3px', height: '10px', background: 'var(--accent-orange)', borderRadius: '2px' }}></div>
                     <div style={{ fontSize: '0.65rem', color: 'var(--text-tertiary)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>Mission Status Bar</div>
                 </div>
@@ -687,7 +687,7 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                 {/* LEFT: Strategic Conclusion */}
                 <div className="hover-lift animate-slide-up delay-300" style={{
                     position: 'relative',
-                    padding: '14px 12px',
+                    padding: '8px 12px',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -705,7 +705,7 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                         opacity: 0.8
                     }} />
                     <h4 style={{
-                        margin: '0 0 8px 0',
+                        margin: '0 0 6px 0',
                         fontSize: '0.65rem',
                         fontWeight: '800',
                         textTransform: 'uppercase',
@@ -741,7 +741,7 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                                     <div key={idx} style={{
                                         display: 'flex',
                                         alignItems: 'center',
-                                        padding: '6px 0',
+                                        padding: '4px 0',
                                         borderBottom: idx < set.length - 1 ? '1px solid rgba(255,255,255,0.03)' : 'none'
                                     }}>
                                         <span style={{ fontWeight: '700', color: 'var(--text-tertiary)', textTransform: 'uppercase', fontSize: '0.55rem', letterSpacing: '0.8px', width: '60px', flexShrink: 0, opacity: 0.5 }}>
@@ -762,7 +762,7 @@ export default function Home({ workouts = [], metrics = [], period, isExpert, go
                     background: 'var(--bg-card)',
                     borderRadius: '12px',
                     border: '1px solid rgba(255,255,255,0.04)',
-                    padding: '12px 14px'
+                    padding: '8px 12px'
                 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
                         <div style={{ width: '3px', height: '10px', background: 'var(--accent-blue)', borderRadius: '2px' }}></div>

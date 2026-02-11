@@ -17,7 +17,7 @@ import { filterWorkoutsByPeriod, filterMetricsByPeriod } from './domain/selector
 function App() {
   const [activeTab, setActiveTab] = useState('home');
   const [selectedPeriod, setSelectedPeriod] = useState(PERIODS.ALL);
-  const [isExpertMode, setIsExpertMode] = useState(false);
+  const isExpertMode = false; // Static, toggle removed
 
   // -- GLOBAL MUTABLE STATE (For Edit/Data requirements) --
   const [workouts, setWorkouts] = useState(workoutsRaw);
@@ -97,13 +97,7 @@ function App() {
             onSelect={setSelectedPeriod}
           />
 
-          <button
-            className="btn-secondary"
-            onClick={() => setIsExpertMode(!isExpertMode)}
-            style={{ marginLeft: '16px', opacity: isExpertMode ? 1 : 0.7, padding: '6px 12px', fontSize: '0.75rem' }}
-          >
-            {isExpertMode ? '⚡ Expert' : 'Basic'}
-          </button>
+
         </div>
       </header>
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
